@@ -19,3 +19,4 @@ git remote -v
 git remote rm epifron
 git pull epifron master
 git push [alias] [branch]
+Este cambio debe replicarse en el servidor
