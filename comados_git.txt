@@ -20,3 +20,6 @@ git remote rm epifron
 git pull epifron master
 git push [alias] [branch]
 Este cambio debe replicarse en el servidor
+Un nuevo cambio
+despues de configurar el apache en el servidor
+asi debe funcionar
