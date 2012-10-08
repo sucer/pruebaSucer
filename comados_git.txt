@@ -1,28 +1,44 @@
+#guia de referencia comandos de git
 http://gitref.org/
+#configuracion inicial repositorio
 git config --global user.name "Andres Sucerquia"
 git config --global user.email "andressucer@gmail.com"
+#autenticacion ssh
 ssh-keygen 
 cat ~/.ssh/id_rsa.pub
-mkdir pepe
-cd pepe
+#creacion de repositorio
+mkdir epifron
+cd epifron
 git init
+#copia del repositorio
 git clone git@github.com:sucer/epifron.git 
+#estado del repositorio
 git status -s
+#diferencias 
 git diff HEAD
+#asentamiento de cambios en el repositorio
 git commit -m 'my hola mundo changes'
-Probando Esto
-COMO DIRIA LA TIA ESPERANZA "jUEPUTA QUE rICO"
-/*/*/-*/-/*-/
-para cambiar entre ramas
+#Probando Esto
+#COMO DIRIA LA TIA ESPERANZA "Jueputa que Rico"
+#no profe que vaina
+#hay que esperar el comentario de Sebas
+#/*/*/-*/-/*-/
+#para cambiar entre ramas
 git checkout testing
 git checkout master
-$ git merge testing
-git remote add epifron git@github.com:sucer/epifron.git 
+#Para mezclar ramas
+git merge testing
+#listar repositorio remotos
 git remote -v
+#adicionar conexion repositorio remoto
+git remote add epifron git@github.com:sucer/epifron.git 
+#eliminar conexion repositorio remoto
 git remote rm epifron
+#Sincronizar repositorio remoto
 git pull epifron master
+#enviar cambios al repositorio remoto
 git push [alias] [branch]
-Este cambio debe replicarse en el servidor
-Un nuevo cambio
-despues de configurar el apache en el servidor
-asi debe funcionar
+#Este cambio debe replicarse en el servidor
+#Un nuevo cambio
+#despues de configurar el apache en el servidor
+#asi debe funcionar
